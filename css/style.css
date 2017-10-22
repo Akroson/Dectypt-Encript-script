@@ -1,0 +1,197 @@
+*, *:before, *:after { 
+-webkit-box-sizing: border-box; 
+-moz-box-sizing: border-box; 
+box-sizing: border-box;
+}
+
+body {
+	background: url(../img/use_your_illusion.png);
+	font-size: 16px;
+	overflow-x: hidden;
+	width: 100%;
+	height: 100%;
+}
+
+textarea {
+	resize:none;
+	outline: none;
+}
+
+.container {
+	width: 80%;
+	margin:0 auto;
+}
+
+.verifiable{
+	padding-top: 8rem; 
+	text-align: center;
+}
+
+.example {
+	display: inline-block;
+}
+
+.example__text{
+	font-family: 'concert_oneregular', sans-serif;
+	font-size: 2rem;
+	color:#DBDBDB;
+}
+
+.icon-forward {
+	font-size: 1.4rem;
+	color:#939696;
+}
+
+.lable-checkbox {
+	cursor: pointer;
+}
+
+.verifiable__checkbox {
+	display: none;
+}
+.verifiable__checkbox:checked + .box-checkbox {
+	background: rgba(97, 225, 250, 0.2);
+}
+.verifiable__checkbox:checked + .box-checkbox:after {
+	left:39px;
+}
+
+.box-checkbox {
+	position: relative;
+	display: inline-block;
+	width: 70px;
+	height: 30px;
+	border-radius: 50px;
+	background: rgba(97, 225, 250, 0.2);
+	box-shadow: inset 0 0 10px 2px  rgba(5, 128, 153, 0.5); 
+	margin:0 10px 0 10px;
+	transform: translateY(18%);
+}
+
+.box-checkbox:after {
+	content: '';
+	position: absolute;
+	width: 30px;
+	height: 96%;
+	background: #DEE2E3;
+	border-radius: 50%;
+	left:1px;
+	top:2%;
+	transition:left .2s ease-in-out, box-shadow .5s ease;
+	box-shadow: inset 5px -5px 5px 5px rgba(97, 225, 250,.2);
+}	
+
+.fields{
+	margin-top:60px;
+	text-align: center;
+}
+
+.fields__text {
+	display: inline-block;
+	margin: 0 auto;
+	width: 47%;
+	height: 200px;
+	border:4px solid #61E1FA;
+	box-shadow: 0 0 40px 1px #61E1FA;
+	border-radius: 10px;
+	background: rgba(97, 225, 250, 0.08); 
+	color:#eee;
+	transition: box-shadow .4s ease-in-out, background .4s ease-in-out, border .4s ease-in-out;
+	font-family: Arial, sans-serif;
+}
+
+.fields__set-value,
+.fields__value {
+	margin: 2rem 0;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.fields__value {
+	margin-right: 2rem;
+}
+
+.fields__set-value {
+	display: block;
+}
+
+.fields__value-text {
+	font-family: 'concert_oneregular', sans-serif;
+	font-size: 1.5rem;
+	color:#DBDBDB;
+	margin-right: 10px;
+}
+
+.fields__first-key,
+.fields__second-key,
+.fields__connector-value {
+	padding: 5px 5px;
+	background: rgba(97, 225, 250, 0.08);
+	border: none;
+	box-shadow: 0 0 4px 1px #61E1FA;
+	/*border:1px solid #61E1FA;*/
+	margin: 0 6px;
+	outline:none;
+	color:#eee;
+	text-align: center;
+	transition: box-shadow .4s ease-in-out, background .4s ease-in-out, width .1s ease;
+	width:23px;
+}
+
+.up,
+.down {
+	-webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    color:#c1c1c1;
+	font-size: 20px;
+}
+
+.expand-button,
+.fields__cipher-button {
+	box-shadow: 0 0 15px 1px #61E1FA;
+	background: rgba(97, 225, 250, 0.3);
+	border:1px solid #00AACC;
+	font-family: 'concert_oneregular', sans-serif;
+	color:#DBDBDB;
+	padding:5px;
+	outline: none;
+	cursor: pointer;
+	vertical-align: middle;
+}
+
+.fields__cipher-button {
+	display: inline-block;
+	margin-left: 2rem;
+	font-size: 1.8rem;
+}
+
+.expand-button {
+	display: none;
+	font-size: 1.4rem;
+	vertical-align: top;
+	margin-right: -100px;
+	margin-left: 15px;
+}
+
+.expand-button:active,
+.fields__cipher-button:active{
+	transform: scale(0.95);
+	box-shadow: 0 0 5px 1px #61E1FA;
+	background: rgba(97, 225, 250, 0.2);
+}
+
+.error-input {
+	box-shadow: 0 0 4px 1px #f90c0c;
+	background: rgba(252, 50, 50, 0.3);
+}
+.error-area {
+	background: rgba(252, 50, 50, 0.3);
+	box-shadow: 0 0 40px 1px #f90c0c;
+	border:4px solid #f90c0c;
+}
+
+.fixed {
+	position: fixed;
+	top:0;
+}

@@ -1,0 +1,16 @@
+{
+  "name": "",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "32eebd7bef491a0cbf9bc839e40d271c",
+      "css": "forward",
+      "code": 59392,
+      "src": "websymbols"
+    }
+  ]
+}

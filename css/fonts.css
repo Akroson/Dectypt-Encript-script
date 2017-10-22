@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'merriweatherregular';
+    src: url('../fonts/Merriweather/merriweather-regular-webfont.woff2') format('woff2'),
+         url('../fonts/Merriweather/merriweather-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'concert_oneregular';
+    src: url('../fonts/concert one/concertone-regular-webfont.woff2') format('woff2'),
+         url('../fonts/concert one/concertone-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

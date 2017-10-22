@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cipher</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="fonts/fontello-7746512e/css/fontello-embedded.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="container">
+			<div class="verifiable">
+				<div class="example">
+					<label class="lable-checkbox" onmousedown="return false">
+						<span class="example__text">Text <i class="icon-forward"></i> Cipher</span>
+						<input type="checkbox" class="verifiable__checkbox" id="checkbox" />
+						<span class="box-checkbox"></span>
+						<span class="example__text">Cipher <i class="icon-forward"></i> Text</span>
+					</label>	
+				</div>
+			</div>
+			<div class="fields">
+				<textarea name="input" id="fields-input" class="fields__text" cols="30" rows="10"></textarea>
+				<div class="fields__set-value">
+					<div class="fields__first-value fields__value">
+						<span class="fields__value-text">Key 1:</span>
+						<span class="down">—</span>
+						<input type="text" class="fields__first-key">
+						<span class="up">+</span>
+					</div>
+					<div class="fields__second-value fields__value">
+						<span class="fields__value-text">Key 2:</span>
+						<span class="down">—</span>
+						<input type="text" class="fields__second-key">
+						<span class="up">+</span>
+					</div>
+					<div class="fields__connector fields__value">
+						<span class="fields__value-text">Connector:</span>
+						<input type="text" class="fields__connector-value">
+					</div>
+					<button class="fields__cipher-button">Magic</button>
+				</div>
+				<textarea name="output" id="fields-output" class="fields__text" cols="30" rows="10"></textarea>
+				<button class="expand-button">Expand</button>
+			</div>
+		</div>
+	</div>
+	<script src="js/main.js" defer></script>	
+</body>
+</html>
